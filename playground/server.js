@@ -2,6 +2,7 @@ const request=require('request');
 const hbs=require('hbs');
 const express=require('express');
 var bodyParser = require('body-parser');
+var port=process.env.PORT || 3000;
 var app=express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 //var promise2=require('./promise2.js');
@@ -60,6 +61,6 @@ app.use(express.static(__dirname+ '/views'));
  //   //console.log(some);
  // });
 
- app.listen(3000,()=>{
+ app.listen(port,()=>{
    console.log('server is up and running');
  });
