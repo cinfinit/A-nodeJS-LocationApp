@@ -1,1 +1,1 @@
-web: node /playground/server.js
+web: node playground/server.js
